@@ -1,0 +1,20 @@
+/*
+  Mirrors the original site's `style-hover` / `style-focus` mechanism, which
+  generated a scoped CSS class with `:hover`/`:focus` rules marked
+  `!important` so they could override each element's inline `style`. Class
+  names below are grouped by declaration set, not by page, since the same
+  hover treatment repeats across many unrelated elements.
+*/
+
+.hover-bg-1849a9:hover { background: #1849A9 !important; }
+.hover-bg-1849a9-fg-fff:hover { background: #1849A9 !important; color: #fff !important; }
+.hover-bg-eff8ff:hover { background: #EFF8FF !important; }
+.hover-bg-eff8ff-fg-1849a9:hover { background: #EFF8FF !important; color: #1849A9 !important; }
+.hover-border-1849a9:hover { border-color: #1849A9 !important; }
+.hover-border-1849a9-shadow:hover { border-color: #1849A9 !important; box-shadow: 0 8px 22px rgba(15,45,82,.07) !important; }
+.hover-border-84caff:hover { border-color: #84CAFF !important; }
+.hover-border-84caff-fg-84caff:hover { border-color: #84CAFF !important; color: #84CAFF !important; }
+.hover-fg-1849a9:hover { color: #1849A9 !important; }
+.hover-fg-84caff:hover { color: #84CAFF !important; }
+
+.skip-link:focus { left: 12px !important; top: 12px !important; }
