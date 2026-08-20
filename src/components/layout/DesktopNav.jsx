@@ -9,7 +9,7 @@ function linkStyleFor(m, i, pathname, dd) {
   const weight = active ? '600' : '500'
   const color = m.label === '예약확인/신청' ? '#1849A9' : '#101828'
   const underline = dd === i ? '#155EEF' : 'transparent'
-  return css(`display:inline-flex;align-items:center;min-height:44px;padding:0 14px;font:${weight} 15px/1 'Noto Sans KR',sans-serif;color:${color};text-decoration:none;border-bottom:2px solid ${underline};`)
+  return css(`display:inline-flex;align-items:center;min-height:44px;padding:0 14px;font:${weight} 15px/1 var(--font-family-primary);color:${color};text-decoration:none;border-bottom:2px solid ${underline};`)
 }
 
 export default function DesktopNav() {
@@ -41,7 +41,7 @@ export default function DesktopNav() {
                     key={s.href + s.label}
                     href={s.href}
                     className="hover-bg-eff8ff-fg-1849a9"
-                    style={css("padding:11px 14px;border-radius:7px;font:400 14px/1.3 'Noto Sans KR',sans-serif;color:#101828;text-decoration:none;min-height:44px;display:flex;align-items:center")}
+                    style={css("padding:11px 14px;border-radius:7px;font:400 14px/1.3 var(--font-family-primary);color:#101828;text-decoration:none;min-height:44px;display:flex;align-items:center")}
                   >
                     {s.label}
                   </SiteLink>

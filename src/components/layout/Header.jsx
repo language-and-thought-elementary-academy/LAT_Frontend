@@ -11,12 +11,12 @@ function UtilityBar() {
   return (
     <div style={{ borderBottom: '1px solid #E4EDF7', background: '#EFF8FF' }}>
       <div style={{ maxWidth: '1240px', margin: '0 auto', padding: '0 24px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '16px' }}>
-        <a href="tel:0225670548" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', font: "500 13px/1 'Noto Sans KR',sans-serif", color: '#1849A9', textDecoration: 'none', letterSpacing: '.01em' }}>상담센터 02-567-0548</a>
+        <a href="tel:0225670548" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', font: "500 13px/1 var(--font-family-primary)", color: '#1849A9', textDecoration: 'none', letterSpacing: '.01em' }}>상담센터 02-567-0548</a>
         <div style={{ display: 'flex', alignItems: 'center', gap: '18px' }}>
-          <SiteLink href="#/admission" className="hover-fg-1849a9" style={{ font: "400 13px/1 'Noto Sans KR',sans-serif", color: '#667085', textDecoration: 'none' }}>처음 방문하셨나요?</SiteLink>
-          <SiteLink href="#/faq" className="hover-fg-1849a9" style={{ font: "400 13px/1 'Noto Sans KR',sans-serif", color: '#667085', textDecoration: 'none' }}>FAQ</SiteLink>
-          <SiteLink href="#/notice" className="hover-fg-1849a9" style={{ font: "400 13px/1 'Noto Sans KR',sans-serif", color: '#667085', textDecoration: 'none' }}>공지사항</SiteLink>
-          <span style={{ font: "400 13px/1 'Noto Sans KR',sans-serif", color: '#A3AAB6' }} aria-disabled="true" title="준비 중">로그인 · 회원가입 · 강사모집</span>
+          <SiteLink href="#/admission" className="hover-fg-1849a9" style={{ font: "400 13px/1 var(--font-family-primary)", color: '#667085', textDecoration: 'none' }}>처음 방문하셨나요?</SiteLink>
+          <SiteLink href="#/faq" className="hover-fg-1849a9" style={{ font: "400 13px/1 var(--font-family-primary)", color: '#667085', textDecoration: 'none' }}>FAQ</SiteLink>
+          <SiteLink href="#/notice" className="hover-fg-1849a9" style={{ font: "400 13px/1 var(--font-family-primary)", color: '#667085', textDecoration: 'none' }}>공지사항</SiteLink>
+          <span style={{ font: "400 13px/1 var(--font-family-primary)", color: '#A3AAB6' }} aria-disabled="true" title="준비 중">로그인 · 회원가입 · 강사모집</span>
         </div>
       </div>
     </div>
@@ -47,12 +47,12 @@ function MobileMenuPanel() {
     <div style={{ borderTop: '1px solid #D0D5DD', background: '#fff', maxHeight: 'calc(100vh - 120px)', overflowY: 'auto', padding: '8px 24px 28px' }}>
       <nav aria-label="모바일 메뉴" style={{ display: 'flex', flexDirection: 'column' }}>
         {mobileMenu.map(m => (
-          <SiteLink key={m.href} href={m.href} style={{ padding: '16px 4px', borderBottom: '1px solid #F0F1F3', font: "500 16px/1.3 'Noto Sans KR',sans-serif", color: '#101828', textDecoration: 'none', minHeight: '44px', display: 'flex', alignItems: 'center' }}>{m.label}</SiteLink>
+          <SiteLink key={m.href} href={m.href} style={{ padding: '16px 4px', borderBottom: '1px solid #F0F1F3', font: "500 16px/1.3 var(--font-family-primary)", color: '#101828', textDecoration: 'none', minHeight: '44px', display: 'flex', alignItems: 'center' }}>{m.label}</SiteLink>
         ))}
       </nav>
       <div style={{ display: 'flex', gap: '10px', marginTop: '22px' }}>
-        <a href="tel:0225670548" style={{ flex: 1, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', minHeight: '52px', border: '1px solid #1849A9', borderRadius: '4px', color: '#1849A9', font: "600 15px/1 'Noto Sans KR',sans-serif", textDecoration: 'none' }}>전화상담</a>
-        <SiteLink href="#/consult" style={{ flex: 1, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', minHeight: '52px', background: '#155EEF', border: '1px solid #155EEF', borderRadius: '4px', color: '#fff', font: "600 15px/1 'Noto Sans KR',sans-serif", textDecoration: 'none' }}>수강상담</SiteLink>
+        <a href="tel:0225670548" style={{ flex: 1, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', minHeight: '52px', border: '1px solid #1849A9', borderRadius: '4px', color: '#1849A9', font: "600 15px/1 var(--font-family-primary)", textDecoration: 'none' }}>전화상담</a>
+        <SiteLink href="#/consult" style={{ flex: 1, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', minHeight: '52px', background: '#155EEF', border: '1px solid #155EEF', borderRadius: '4px', color: '#fff', font: "600 15px/1 var(--font-family-primary)", textDecoration: 'none' }}>수강상담</SiteLink>
       </div>
     </div>
   )
@@ -68,8 +68,8 @@ export default function Header() {
 
       <div style={{ maxWidth: '1240px', margin: '0 auto', padding: '0 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '24px', height: scrolled ? '68px' : '84px' }}>
         <SiteLink href="#/" style={{ display: 'flex', flexDirection: 'column', gap: '3px', textDecoration: 'none', flex: '0 0 auto' }}>
-          <span style={{ font: "700 19px/1 'Noto Serif KR',serif", letterSpacing: '.09em', color: '#1849A9' }}>언어와 사유</span>
-          <span style={{ font: "500 12px/1 'Noto Sans KR',sans-serif", letterSpacing: '.14em', color: '#1849A9' }}>ELEMENTARY · 초등논술</span>
+          <span style={{ font: "700 19px/1 var(--font-family-primary)", letterSpacing: '.09em', color: '#1849A9' }}>언어와 사유</span>
+          <span style={{ font: "500 12px/1 var(--font-family-primary)", letterSpacing: '.14em', color: '#1849A9' }}>ELEMENTARY · 초등논술</span>
         </SiteLink>
 
         {isDesktop && <DesktopNav />}

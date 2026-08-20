@@ -12,7 +12,7 @@ export function statusMeta(status) {
 }
 
 export function badgeStyle(meta) {
-  return css(`display:inline-flex;align-items:center;gap:8px;align-self:flex-start;margin:0;padding:8px 14px;border-radius:999px;font:600 13px/1 'Noto Sans KR',sans-serif;color:${meta.fg};background:${meta.bg};border:1px solid ${meta.bd}`)
+  return css(`display:inline-flex;align-items:center;gap:8px;align-self:flex-start;margin:0;padding:8px 14px;border-radius:999px;font:600 13px/1 var(--font-family-primary);color:${meta.fg};background:${meta.bg};border:1px solid ${meta.bd}`)
 }
 
 export function dotStyle(meta) {
@@ -21,29 +21,29 @@ export function dotStyle(meta) {
 
 export function chipStyle(selected) {
   return css(
-    "flex:0 0 auto;min-height:44px;padding:0 20px;border-radius:999px;cursor:pointer;font:600 14px/1 'Noto Sans KR',sans-serif;transition:background .2s,border-color .2s;" +
+    "flex:0 0 auto;min-height:44px;padding:0 20px;border-radius:999px;cursor:pointer;font:600 14px/1 var(--font-family-primary);transition:background .2s,border-color .2s;" +
     (selected ? 'background:#155EEF;color:#fff;border:1px solid #155EEF;' : 'background:#fff;color:#155EEF;border:1px solid #D0D5DD;')
   )
 }
 
 export function inputStyle(invalid) {
-  return css(`width:100%;min-height:52px;padding:14px 16px;border-radius:6px;font:400 16px/1.5 'Noto Sans KR',sans-serif;color:#101828;background:#fff;border:1px solid ${invalid ? '#C24545' : '#D0D5DD'};`)
+  return css(`width:100%;min-height:52px;padding:14px 16px;border-radius:6px;font:400 16px/1.5 var(--font-family-primary);color:#101828;background:#fff;border:1px solid ${invalid ? '#C24545' : '#D0D5DD'};`)
 }
 
 export function classCtaStyle(meta) {
   return css(
-    "display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:4px;font:600 14px/1 'Noto Sans KR',sans-serif;text-decoration:none;align-self:flex-start;" +
+    "display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:4px;font:600 14px/1 var(--font-family-primary);text-decoration:none;align-self:flex-start;" +
     (meta.closed ? 'background:#F0F1F3;color:#98A0AE;border:1px solid #E1E3E8;pointer-events:none;' : 'background:#155EEF;color:#fff;border:1px solid #155EEF;')
   )
 }
 
 export function faqIconStyle(open) {
-  return css(`font:400 22px/1 'Noto Sans KR',sans-serif;color:#1849A9;transition:transform .2s;transform:rotate(${open ? '45deg' : '0deg'});flex:0 0 auto`)
+  return css(`font:400 22px/1 var(--font-family-primary);color:#1849A9;transition:transform .2s;transform:rotate(${open ? '45deg' : '0deg'});flex:0 0 auto`)
 }
 
 export function submitStyle(submitting) {
   return css(
-    `display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 34px;border-radius:4px;font:600 16px/1 'Noto Sans KR',sans-serif;border:1px solid #155EEF;cursor:${submitting ? 'wait' : 'pointer'};background:${submitting ? '#7CA8E8' : '#155EEF'};border-color:${submitting ? '#7CA8E8' : '#155EEF'};color:#fff`
+    `display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 34px;border-radius:4px;font:600 16px/1 var(--font-family-primary);border:1px solid #155EEF;cursor:${submitting ? 'wait' : 'pointer'};background:${submitting ? '#7CA8E8' : '#155EEF'};border-color:${submitting ? '#7CA8E8' : '#155EEF'};color:#fff`
   )
 }
 
