@@ -26,9 +26,8 @@ input, select, textarea, button { font-family: inherit; }
 .site-shell { background: #fff; }
 .site-header { box-shadow: none; transition: border-color .25s ease, background .25s ease; }
 .site-header .header-main { transition: height .25s ease; }
-.wordmark { position: relative; height: 100%; padding: 4px 0; }
-.brand-logo-frame { position: relative; display: block; width: 82px; height: 76px; overflow: hidden; flex: 0 0 auto; }
-.brand-logo { position: absolute; left: 50%; top: 50%; display: block; width: 130px; height: 130px; max-width: none; object-fit: contain; transform: translate(-50%,-50%); }
+.wordmark { display: flex; align-items: center; flex-shrink: 0; height: 100%; padding: 0; }
+.brand-logo { display: block; width: auto; height: auto; max-height: 56px; object-fit: contain; flex-shrink: 0; }
 
 .editorial-hero { background: var(--blue-midnight) !important; min-height: min(760px, calc(100vh - 80px)); display: grid; align-items: center; }
 .editorial-hero::after { content: 'LANGUAGE / QUESTION / THOUGHT / EXPRESSION'; position: absolute; right: 24px; bottom: 32px; writing-mode: vertical-rl; font: 500 10px/1 var(--font-family-primary); letter-spacing: .22em; color: rgba(255,255,255,.32); }
@@ -116,15 +115,12 @@ input, select, textarea, button { font-family: inherit; }
   .editorial-quick-link:nth-child(-n+2) { border-bottom: 1px solid var(--line) !important; }
   .numbered-section h2 + p { margin-left: clamp(40px,10vw,100px) !important; }
   .seminar-grid { grid-template-columns: 1fr !important; gap: 60px !important; }
-  .brand-logo-frame { width: 72px; height: 68px; }
-  .brand-logo { width: 116px; height: 116px; }
+  .brand-logo { max-height: 52px; }
 }
 
 @media (max-width: 639px) {
   :root { --page-gutter: 20px; --section-space: 82px; }
-  .wordmark { padding: 5px 0; }
-  .brand-logo-frame { width: 66px; height: 62px; }
-  .brand-logo { width: 106px; height: 106px; }
+  .brand-logo { max-height: 48px; }
   .editorial-hero { min-height: 640px; }
   .editorial-hero::after { display: none; }
   .editorial-hero__content { padding-top: 90px !important; padding-bottom: 82px !important; }

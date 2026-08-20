@@ -2,7 +2,7 @@ import SiteLink from '../common/SiteLink'
 import DesktopNav from './DesktopNav'
 import { mobileMenu } from '../../data/menu'
 import { useSiteState } from '../../context/SiteStateContext'
-import brandLogo from '../../assets/brand/eoneowa-sayu-logo.png'
+import brandLogo from '../../assets/brand/eoneowa-sayu-logo-header.png'
 
 // utilityBarVisible / mobileCtaEnabled were originally DC-editor toggle
 // props; the standalone site keeps their defaults (both `true`).
@@ -69,9 +69,7 @@ export default function Header() {
 
       <div className="header-main" style={{ maxWidth: '1240px', margin: '0 auto', padding: '0 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '24px', height: scrolled ? '68px' : '84px' }}>
         <SiteLink href="#/" className="wordmark" aria-label="언어와 사유 홈페이지" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', flex: '0 0 auto' }}>
-          <span className="brand-logo-frame">
-            <img className="brand-logo" src={brandLogo} alt="언어와 사유" />
-          </span>
+          <img className="brand-logo" src={brandLogo} alt="언어와 사유" />
         </SiteLink>
 
         {isDesktop && <DesktopNav />}
