@@ -2,8 +2,8 @@ import SiteLink from '../common/SiteLink'
 
 export default function InnerHero({ hero }) {
   return (
-    <section style={{ background: '#EFF8FF', borderBottom: '1px solid #B2DDFF' }}>
-      <div style={{ maxWidth: '1240px', margin: '0 auto', padding: 'clamp(52px,6vw,92px) 24px clamp(44px,5vw,72px)' }}>
+    <section className="inner-hero" style={{ background: '#EFF8FF', borderBottom: '1px solid #B2DDFF' }}>
+      <div className="inner-hero__content" style={{ maxWidth: '1240px', margin: '0 auto', padding: 'clamp(52px,6vw,92px) 24px clamp(44px,5vw,72px)' }}>
         <nav aria-label="breadcrumb" style={{ margin: '0 0 26px' }}>
           <ol style={{ listStyle: 'none', margin: 0, padding: 0, display: 'flex', flexWrap: 'wrap', gap: '8px', font: "400 13px/1.5 var(--font-family-primary)", color: '#667085' }}>
             <li><SiteLink href="#/" style={{ color: '#667085', textDecoration: 'none' }}>HOME</SiteLink></li>

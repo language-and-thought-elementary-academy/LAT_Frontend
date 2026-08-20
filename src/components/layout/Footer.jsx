@@ -3,7 +3,7 @@ import { footerLinks } from '../../data/menu'
 
 export default function Footer() {
   return (
-    <footer style={{ background: '#081A33', padding: 'clamp(56px,7vw,96px) 0 40px' }}>
+    <footer className="site-footer" style={{ background: '#081A33', padding: 'clamp(56px,7vw,96px) 0 40px' }}>
       <div style={{ maxWidth: '1240px', margin: '0 auto', padding: '0 24px' }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: '44px', paddingBottom: '44px', borderBottom: '1px solid rgba(255,255,255,.14)' }}>
           <div>

@@ -13,7 +13,7 @@ export default function RootLayout() {
   const showMobileCta = MOBILE_CTA_ENABLED && isMobile
 
   return (
-    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', background: '#fff' }}>
+    <div className="site-shell" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', background: '#fff' }}>
       <a href="#main" className="skip-link" style={{ position: 'absolute', left: '-9999px', top: 0, background: '#1849A9', color: '#fff', padding: '12px 18px', zIndex: 200 }}>본문으로 바로가기</a>
 
       <Header />

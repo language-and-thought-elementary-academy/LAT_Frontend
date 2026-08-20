@@ -2,6 +2,7 @@ import SiteLink from '../common/SiteLink'
 import DesktopNav from './DesktopNav'
 import { mobileMenu } from '../../data/menu'
 import { useSiteState } from '../../context/SiteStateContext'
+import brandLogo from '../../assets/brand/eoneowa-sayu-logo.png'
 
 // utilityBarVisible / mobileCtaEnabled were originally DC-editor toggle
 // props; the standalone site keeps their defaults (both `true`).
@@ -63,13 +64,14 @@ export default function Header() {
   const showUtility = UTILITY_BAR_VISIBLE && isDesktop
 
   return (
-    <header style={{ position: 'sticky', top: 0, zIndex: 100, background: 'rgba(255,255,255,.97)', backdropFilter: 'saturate(160%) blur(6px)', borderBottom: '1px solid #D0D5DD' }}>
+    <header className="site-header" style={{ position: 'sticky', top: 0, zIndex: 100, background: 'rgba(255,255,255,.97)', backdropFilter: 'saturate(160%) blur(6px)', borderBottom: '1px solid #D0D5DD' }}>
       {showUtility && <UtilityBar />}
 
-      <div style={{ maxWidth: '1240px', margin: '0 auto', padding: '0 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '24px', height: scrolled ? '68px' : '84px' }}>
-        <SiteLink href="#/" style={{ display: 'flex', flexDirection: 'column', gap: '3px', textDecoration: 'none', flex: '0 0 auto' }}>
-          <span style={{ font: "700 19px/1 var(--font-family-primary)", letterSpacing: '.09em', color: '#1849A9' }}>언어와 사유</span>
-          <span style={{ font: "500 12px/1 var(--font-family-primary)", letterSpacing: '.14em', color: '#1849A9' }}>ELEMENTARY · 초등논술</span>
+      <div className="header-main" style={{ maxWidth: '1240px', margin: '0 auto', padding: '0 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '24px', height: scrolled ? '68px' : '84px' }}>
+        <SiteLink href="#/" className="wordmark" aria-label="언어와 사유 홈페이지" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', flex: '0 0 auto' }}>
+          <span className="brand-logo-frame">
+            <img className="brand-logo" src={brandLogo} alt="언어와 사유" />
+          </span>
         </SiteLink>
 
         {isDesktop && <DesktopNav />}

@@ -6,15 +6,23 @@
   hover treatment repeats across many unrelated elements.
 */
 
-.hover-bg-1849a9:hover { background: #1849A9 !important; }
+.hover-bg-1849a9:hover { background: #102A56 !important; border-color: #102A56 !important; }
 .hover-bg-1849a9-fg-fff:hover { background: #1849A9 !important; color: #fff !important; }
 .hover-bg-eff8ff:hover { background: #EFF8FF !important; }
 .hover-bg-eff8ff-fg-1849a9:hover { background: #EFF8FF !important; color: #1849A9 !important; }
 .hover-border-1849a9:hover { border-color: #1849A9 !important; }
-.hover-border-1849a9-shadow:hover { border-color: #1849A9 !important; box-shadow: 0 8px 22px rgba(15,45,82,.07) !important; }
+.hover-border-1849a9-shadow:hover { border-color: #1849A9 !important; box-shadow: none !important; }
 .hover-border-84caff:hover { border-color: #84CAFF !important; }
 .hover-border-84caff-fg-84caff:hover { border-color: #84CAFF !important; color: #84CAFF !important; }
 .hover-fg-1849a9:hover { color: #1849A9 !important; }
 .hover-fg-84caff:hover { color: #84CAFF !important; }
 
 .skip-link:focus { left: 12px !important; top: 12px !important; }
+
+.site-shell a,
+.site-shell button { transition: color .2s ease, background-color .2s ease, border-color .2s ease, opacity .2s ease; }
+.site-shell a[style*="border-bottom"] { background-image: linear-gradient(currentColor,currentColor); background-position: 0 100%; background-repeat: no-repeat; background-size: 0 1px; transition: background-size .25s ease, color .2s ease; }
+.site-shell a[style*="border-bottom"]:hover { background-size: 100% 1px; }
+.inner-publication article { border-radius: 2px !important; box-shadow: none !important; }
+.inner-publication article[style*="border"] { transition: border-color .25s ease, transform .25s ease; }
+.inner-publication article[style*="border"]:hover { border-color: #8FB4DC !important; }

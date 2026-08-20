@@ -4,8 +4,8 @@ import { teachersPlaceholder } from '../../data/content'
 
 export default function TeachersPreview() {
   return (
-    <section aria-labelledby="teach-h" style={{ background: '#EFF8FF', padding: 'clamp(72px,9vw,140px) 0' }}>
-      <div style={{ maxWidth: '1240px', margin: '0 auto', padding: '0 24px' }}>
+    <section className="editorial-section numbered-section section-teachers" aria-labelledby="teach-h" style={{ background: '#EFF8FF', padding: 'clamp(72px,9vw,140px) 0' }}>
+      <div className="editorial-container" style={{ maxWidth: '1240px', margin: '0 auto', padding: '0 24px' }}>
         <p style={{ font: "600 13px/1 var(--font-family-primary)", letterSpacing: '.18em', color: '#1849A9', margin: '0 0 20px' }}>언어와 사유 TEACHERS</p>
         <h2 id="teach-h" style={{ font: "600 clamp(28px,3.4vw,42px)/1.28 var(--font-family-primary)", color: '#1849A9', margin: '0 0 20px', letterSpacing: '-.01em' }}>언어와 사유 선생님을<br />소개합니다.</h2>
         <p style={{ font: "400 clamp(16px,1.2vw,18px)/1.75 var(--font-family-primary)", color: '#667085', margin: '0 0 52px', maxWidth: '680px' }}>아이의 이야기를 듣고,<br />질문을 통해 생각을 이끌어내며,<br />그 생각을 글로 완성할 수 있도록 함께합니다.</p>

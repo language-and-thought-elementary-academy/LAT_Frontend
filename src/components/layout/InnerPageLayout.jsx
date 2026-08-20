@@ -9,9 +9,9 @@ export default function InnerPageLayout() {
   const location = useLocation()
   const hero = heroFor(location.pathname)
   return (
-    <>
+    <div className="inner-publication">
       <InnerHero hero={hero} />
       <Outlet />
-    </>
+    </div>
   )
 }
